@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "aside header header" "aside main rightbar" "aside main rightbar";
+}
+
+.header {
+  grid-area: header;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.main {
+  grid-area: main;
+}
+
+.rightbar {
+  grid-area: rightbar;
+}
+
+.container {
+  max-width: 1340px;
+  padding: 0 15px;
+  margin: 0 auto;
+  padding: 2.5rem 2.5rem 2.5rem 1.25rem;
+  background-image: url("./../../images/container/container-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container.dark-theme {
+  background: black;
+}
+.container.dark-theme * {
+  color: #FFFFFF;
+}
+
+.aside {
+  background-color: #FFFFFF;
+  padding: 1.8125rem;
+  border-radius: 1.25rem;
+  width: 5.25rem;
+  box-shadow: 5px 6px 19px 0 rgba(62, 72, 118, 0.0392156863);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aside__logo {
+  margin-bottom: 7.5rem;
+}
+.aside__nav {
+  margin-bottom: 25.5rem;
+}
+.aside__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+.aside__link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  -webkit-mask-position: center;
+  background-color: #070721;
+  position: relative;
+}
+.aside__link:hover {
+  background-color: #3162FF;
+}
+.aside__link-home {
+  background-color: #3162FF;
+}
+.aside__link-gray {
+  background-color: #B5B5BD;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+.header__search {
+  background-color: #FFFFFF;
+  padding: 1rem 0.875rem 1rem 3.5rem;
+  border-radius: 1.25rem;
+  background-image: url("./../images/header/header-search.jpg");
+  background-repeat: no-repeat;
+  background-position: left 1.25rem center;
+  background-size: 1.25rem 1.25rem;
+  width: 288px;
+  cursor: pointer;
+}
+.header__search::placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Poppins", "sans-serif";
+  color: #B5B5BD;
+  line-height: 24px;
+}
+.header__buttons {
+  margin-left: auto;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  padding: 0.375rem;
+  margin-right: 1.75rem;
+}
+.header__button {
+  background: transparent;
+  padding: 3px;
+}
+.header__button img {
+  width: 35px;
+  height: 35px;
+  border-radius: 0.9375rem;
+}
+.header__button-light.border-active {
+  border: 0.0625rem solid #3162FF;
+  border-radius: 0.9375rem;
+}
+.header__button-dark.border-line {
+  border: 0.0625rem solid #3162FF;
+  border-radius: 0.9375rem;
+}
+.header__message {
+  margin-right: 1.75rem;
+  cursor: pointer;
+}
+.header__useer {
+  display: flex;
+  column-gap: 0.75rem;
+  align-items: center;
+}
+.header__useer-name {
+  font-family: "Poppins", "sans-serif";
+  font-weight: 600;
+  font-size: 1rem;
+  color: #272B36;
+  margin-bottom: 0.3125rem;
+}
+.header__useer-scill {
+  font-family: "Poppins", "sans-serif";
+  font-weight: 400;
+  font-size: 12px;
+  color: #B5B5BD;
+}
+.header__useer-scill span {
+  color: rgb(230, 208, 12);
+}/*# sourceMappingURL=style.css.map */

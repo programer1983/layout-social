@@ -1,0 +1,57 @@
+$white: #FFFFFF;
+$blue: #3162FF;
+$iconColor: #070721;
+$gray: #B5B5BD;
+
+.aside {
+    background-color: $white;
+    padding: 1.8125rem;
+    border-radius: 1.25rem;
+    width: 5.25rem;
+    box-shadow: 5px 6px 19px 0 #3E48760A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    &__logo {
+        margin-bottom: 7.5rem;
+    }
+    &__nav {
+        margin-bottom: 25.5rem;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+    &__item {
+      
+    }
+    &__link {
+        display: block;
+        width: 24px;
+        height: 24px;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        mask-position: center;
+        -webkit-mask-position: center;
+        background-color: $iconColor;
+        position: relative;
+        &:hover{
+            background-color: $blue;
+        }
+    }
+    &__link-home{
+        background-color: $blue;
+    }
+    &__link-gray{
+        background-color: $gray;
+    }
+    &__icon {
+    }
+    &__settings {
+      
+    }
+}
