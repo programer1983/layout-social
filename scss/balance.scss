@@ -1,0 +1,66 @@
+$white: #FFFFFF;
+$grayDark: #8E8C99;
+$poppinsFonts: 'Poppins', 'sans-serif';
+$iconColor: #070721;
+$grayDark: #8E8C99;
+
+.balance {
+    background-color: $white;
+    border-radius: 1.25rem;
+    padding: 2rem 1.25rem 1.5rem;
+    margin-top: 0.9375rem;
+    &__title {
+        font-family: $poppinsFonts;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $grayDark;
+        margin-bottom: 0.625rem;
+        text-align: center;
+        &.balance-active{
+            color: $grayDark;
+        }
+    }
+    &__price {
+        font-family: $poppinsFonts;
+        font-weight: 700;
+        font-size: 1.75rem;
+        color: $iconColor;
+        margin-bottom: 1.125rem;
+        text-align: center;
+        &.balance-price{
+            color: $iconColor;
+        }
+    }
+    &__grafic {
+        position: relative;
+    }
+    &__icon {
+        position: absolute;
+        top: 1.2rem;
+        left: 9rem;
+    }
+    &__vector {
+    }
+    &__bg {
+        margin-top: -6.5rem;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: 1.5625rem;
+        &.balance-item{
+            background: $grayDark;
+            padding: 0.9375rem;
+            border-radius: 0.625rem;
+        }
+    }
+    &__item {
+        color: $grayDark;
+        font-weight: 400;
+        font-size: 0.75rem;
+        font-family: $poppinsFonts;
+        &.balance-color{
+            color: $grayDark;
+        }
+    }
+}

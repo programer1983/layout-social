@@ -1,0 +1,78 @@
+.discover {
+  background-image: url("./../images/discover/discover-bg.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  padding: 48px 70px 60px 60px;
+  border-radius: 1.5rem;
+  margin-left: 1.125rem;
+  position: relative;
+}
+.discover::before {
+  content: url("./../images/discover/vector-top.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.discover::after {
+  content: url("./../images/discover/vector-bottom.png");
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+.discover__content {
+  position: relative;
+  z-index: 1;
+}
+.discover__title {
+  width: 390px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 142.857143%;
+  margin-bottom: 2.5rem;
+  font-family: "Poppins", "sans-serif";
+  color: #070721;
+}
+.discover__title.color-title {
+  color: #3162FF;
+}
+.discover__buttons {
+  display: flex;
+  column-gap: 0.75rem;
+}
+.discover__buttton {
+  border-radius: 1rem;
+  font-family: "Poppins", "sans-serif";
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+.discover__buttton:first-child {
+  background-color: #3162FF;
+  color: #FFFFFF;
+  padding: 0.75rem 2.125rem;
+  transition: background-color 0.3s ease;
+}
+.discover__buttton:first-child:hover {
+  background-color: rgb(25, 25, 179);
+}
+.discover__buttton:last-child {
+  background: transparent;
+  border: 2px solid #3162FF;
+  color: #3162FF;
+  padding: 0.75rem 1.375rem;
+  transition: background-color 0.3s ease;
+}
+.discover__buttton:last-child:hover {
+  background-color: rgb(25, 25, 179);
+  color: #FFFFFF;
+}
+.discover__image {
+  width: 232px;
+  height: 310px;
+  max-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  right: 70px;
+  top: -30px;
+  z-index: 1;
+}/*# sourceMappingURL=discover.css.map */
