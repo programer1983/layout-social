@@ -70,9 +70,6 @@ $darkColor: #272B36;
         align-items: center;
     }
     &__useer-details {
-        // display: flex;
-        // flex-direction: column;
-        // row-gap: 20px;
     }
     &__useer-name {
         font-family: $poppinsFonts;
@@ -80,6 +77,9 @@ $darkColor: #272B36;
         font-size: 1rem;
         color: $darkColor;
         margin-bottom: 0.3125rem;
+        &.name-color{
+            color: $white;
+        }
     }
     &__useer-scill {
         font-family: $poppinsFonts;

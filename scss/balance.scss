@@ -16,9 +16,6 @@ $grayDark: #8E8C99;
         color: $grayDark;
         margin-bottom: 0.625rem;
         text-align: center;
-        &.balance-active{
-            color: $grayDark;
-        }
     }
     &__price {
         font-family: $poppinsFonts;
@@ -27,9 +24,6 @@ $grayDark: #8E8C99;
         color: $iconColor;
         margin-bottom: 1.125rem;
         text-align: center;
-        &.balance-price{
-            color: $iconColor;
-        }
     }
     &__grafic {
         position: relative;
@@ -48,19 +42,11 @@ $grayDark: #8E8C99;
         display: flex;
         align-items: center;
         column-gap: 1.5625rem;
-        &.balance-item{
-            background: $grayDark;
-            padding: 0.9375rem;
-            border-radius: 0.625rem;
-        }
     }
     &__item {
         color: $grayDark;
         font-weight: 400;
         font-size: 0.75rem;
         font-family: $poppinsFonts;
-        &.balance-color{
-            color: $grayDark;
-        }
     }
 }

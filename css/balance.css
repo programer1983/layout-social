@@ -12,9 +12,6 @@
   margin-bottom: 0.625rem;
   text-align: center;
 }
-.balance__title.balance-active {
-  color: #8E8C99;
-}
 .balance__price {
   font-family: "Poppins", "sans-serif";
   font-weight: 700;
@@ -22,9 +19,6 @@
   color: #070721;
   margin-bottom: 1.125rem;
   text-align: center;
-}
-.balance__price.balance-price {
-  color: #070721;
 }
 .balance__grafic {
   position: relative;
@@ -42,17 +36,9 @@
   align-items: center;
   column-gap: 1.5625rem;
 }
-.balance__list.balance-item {
-  background: #8E8C99;
-  padding: 0.9375rem;
-  border-radius: 0.625rem;
-}
 .balance__item {
   color: #8E8C99;
   font-weight: 400;
   font-size: 0.75rem;
   font-family: "Poppins", "sans-serif";
-}
-.balance__item.balance-color {
-  color: #8E8C99;
 }/*# sourceMappingURL=balance.css.map */

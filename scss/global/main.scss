@@ -35,9 +35,9 @@ $white: #FFFFFF;
     background-size: cover;
     &.dark-theme{
         background: black;
-        *{
-            color: $white;
-        }
+        // *{
+        //     color: $white;
+        // }
     }
 }
 
