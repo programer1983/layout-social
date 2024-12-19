@@ -4,6 +4,15 @@
   padding: 2rem 1.25rem 1.5rem;
   margin-top: 0.9375rem;
 }
+@media (max-width: 1320px) {
+  .balance {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .balance__title {
   font-family: "Poppins", "sans-serif";
   font-weight: 400;
@@ -22,6 +31,13 @@
 }
 .balance__grafic {
   position: relative;
+}
+@media (max-width: 1320px) {
+  .balance__grafic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .balance__icon {
   position: absolute;

@@ -2,6 +2,7 @@ $white: #FFFFFF;
 $blue: #3162FF;
 $iconColor: #070721;
 $gray: #B5B5BD;
+$poppinsFonts: 'Poppins', 'sans-serif';
 
 .aside {
     background-color: $white;
@@ -12,17 +13,60 @@ $gray: #B5B5BD;
     display: flex;
     flex-direction: column;
     justify-content: center;
- 
+    @media (max-width: 1320px){
+        position: fixed;
+        top: -100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 200px;
+        background-color: $white;
+        z-index: 2;
+        flex-direction: row;
+        column-gap: 1.25rem;
+        border-radius: 0;
+        padding-top: 5rem;
+        transition: .3s ease;
+        @media (max-width: 800px){
+            flex-direction: column;
+            height: 100%;
+            align-items: center;
+        }
+        &.show{
+            top: 0;
+        }
+    }
     &__logo {
-        margin-bottom: 7.5rem;
+        margin-bottom: 120px;
+        @media (max-width: 1320px){
+            width: 3.125rem;
+            height: 3.125rem;
+        }
+        @media (max-width: 800px){
+            margin-bottom: 3.125rem;
+            width: 60px;
+            height: 60px;
+        }
     }
     &__nav {
         margin-bottom: 25.5rem;
+        @media (max-width: 800px){
+           margin-bottom: 1.875rem;
+        }
     }
     &__list {
         display: flex;
         flex-direction: column;
+        align-items: center;
         row-gap: 2.5rem;
+        @media (max-width: 1320px){
+            flex-direction: row;
+            column-gap: 1.25rem;
+        }
+        @media (max-width: 800px){
+            flex-direction: column;
+            overflow-y: hidden;
+        }
     }
     &__item {
       
@@ -42,9 +86,21 @@ $gray: #B5B5BD;
         &:hover{
             background-color: $blue;
         }
+        @media (max-width: 1320px){
+            width: 3.125rem;
+            height: 3.125rem;
+        }
+        @media (max-width: 800px){
+            width: 40px;
+            height: 40px;
+        }
     }
     &__link-home{
         background-color: $blue;
+        @media (max-width: 800px){
+            width: 50px;
+            height: 50px;
+        }
     }
     &__link-gray{
         background-color: $gray;
@@ -52,6 +108,14 @@ $gray: #B5B5BD;
     &__icon {
     }
     &__settings {
-      
+        @media (max-width: 1320px){
+            width: 3.125rem;
+            height: 3.125rem;
+        }
+        @media (max-width: 800px){
+           width: 3.75rem;
+           height: 3.75rem;
+           margin-bottom: 1.25rem;
+        }
     }
 }

@@ -6,8 +6,20 @@
     padding: 5.5625rem 9.0625rem 4rem;
     width: 1600px;
     height: 1200px;
+    @media (max-width: 1320px){
+       height: 2000px;
+       padding-right: 3.125rem;
+       padding-left: 3.125rem;
+    }
+    @media (max-width: 1020px){
+         padding-right: 3.125rem;
+         padding-left: 3.125rem;
+    } 
 }
 .logo {
     margin-bottom: 3rem;
-    margin-left: 100px;
+    margin-left: 6.25rem;
+    @media (max-width: 1020px){
+        margin-left: 1.875rem;
+    }
 }

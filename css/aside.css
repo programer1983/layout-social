@@ -8,16 +8,76 @@
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 1320px) {
+  .aside {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #FFFFFF;
+    z-index: 2;
+    flex-direction: row;
+    column-gap: 1.25rem;
+    border-radius: 0;
+    padding-top: 5rem;
+    transition: 0.3s ease;
+  }
+}
+@media (max-width: 1320px) and (max-width: 800px) {
+  .aside {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+}
+@media (max-width: 1320px) {
+  .aside.show {
+    top: 0;
+  }
+}
 .aside__logo {
-  margin-bottom: 7.5rem;
+  margin-bottom: 120px;
+}
+@media (max-width: 1320px) {
+  .aside__logo {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+}
+@media (max-width: 800px) {
+  .aside__logo {
+    margin-bottom: 3.125rem;
+    width: 60px;
+    height: 60px;
+  }
 }
 .aside__nav {
   margin-bottom: 25.5rem;
 }
+@media (max-width: 800px) {
+  .aside__nav {
+    margin-bottom: 1.875rem;
+  }
+}
 .aside__list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: 2.5rem;
+}
+@media (max-width: 1320px) {
+  .aside__list {
+    flex-direction: row;
+    column-gap: 1.25rem;
+  }
+}
+@media (max-width: 800px) {
+  .aside__list {
+    flex-direction: column;
+    overflow-y: hidden;
+  }
 }
 .aside__link {
   display: block;
@@ -35,9 +95,40 @@
 .aside__link:hover {
   background-color: #3162FF;
 }
+@media (max-width: 1320px) {
+  .aside__link {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+}
+@media (max-width: 800px) {
+  .aside__link {
+    width: 40px;
+    height: 40px;
+  }
+}
 .aside__link-home {
   background-color: #3162FF;
 }
+@media (max-width: 800px) {
+  .aside__link-home {
+    width: 50px;
+    height: 50px;
+  }
+}
 .aside__link-gray {
   background-color: #B5B5BD;
+}
+@media (max-width: 1320px) {
+  .aside__settings {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+}
+@media (max-width: 800px) {
+  .aside__settings {
+    width: 3.75rem;
+    height: 3.75rem;
+    margin-bottom: 1.25rem;
+  }
 }/*# sourceMappingURL=aside.css.map */

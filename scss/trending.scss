@@ -10,12 +10,20 @@ $grayDark: #8E8C99;
     margin-top: 2.25rem;
     padding: 0 2.5rem;
     &__inner {
+        @media (max-width: 1320px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+       }
     }
     &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 1.25rem;
+        @media (max-width: 1320px){
+           min-width: 80%;
+        }
     }
     &__title {
         font-size: 20px;

@@ -2,11 +2,23 @@
   margin-top: 2.25rem;
   padding: 0 2.5rem;
 }
+@media (max-width: 1320px) {
+  .trending__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .trending__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.25rem;
+}
+@media (max-width: 1320px) {
+  .trending__top {
+    min-width: 80%;
+  }
 }
 .trending__title {
   font-size: 20px;

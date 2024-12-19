@@ -25,3 +25,13 @@ button1.addEventListener('click', () => {
         nameUser.classList.remove('name-color')
     }
 })
+
+const menuButton = document.querySelector('.wrapper__button')
+const aside = document.querySelector('.aside')
+const html = document.querySelector('html')
+
+menuButton.addEventListener('click', () => {
+    aside.classList.toggle('show')
+    html.classList.toggle('unscroll')
+})
+

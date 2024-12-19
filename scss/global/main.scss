@@ -1,4 +1,11 @@
 $white: #FFFFFF;
+$blue: #3162FF;
+$poppinsFonts: 'Poppins', 'sans-serif';
+
+
+html.unscroll{
+      overflow: hidden;
+}
 
 .wrapper{
    display: grid;
@@ -14,8 +21,33 @@ $white: #FFFFFF;
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   position: relative;
+   @media (max-width: 1320px){
+        display: flex;
+        flex-direction: column;
+        row-gap: 3.125rem;
+        width: 100%;
+   }  
    &.dark-theme{
        background: black;
+   }
+   &__button{
+        display: none;
+        position: absolute;
+        top: -6.875rem;
+        right: 1.25rem;
+        z-index: 3;
+        background-color: $blue;
+        padding: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color .3s ease;
+        &:hover{
+            background-color: rgb(25, 25, 179);
+        }
+        @media (max-width: 1320px){
+            display: block;
+        }
    }
 }
 .header{

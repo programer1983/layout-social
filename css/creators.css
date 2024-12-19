@@ -2,11 +2,23 @@
   margin-top: 1.875rem;
   padding: 0 2.5rem;
 }
+@media (max-width: 1320px) {
+  .creators__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .creators__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.25rem;
+}
+@media (max-width: 1320px) {
+  .creators__top {
+    min-width: 80%;
+  }
 }
 .creators__title {
   font-size: 20px;

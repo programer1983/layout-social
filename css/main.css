@@ -7,8 +7,26 @@
   width: 1600px;
   height: 1200px;
 }
+@media (max-width: 1320px) {
+  .social {
+    height: 2000px;
+    padding-right: 3.125rem;
+    padding-left: 3.125rem;
+  }
+}
+@media (max-width: 1020px) {
+  .social {
+    padding-right: 3.125rem;
+    padding-left: 3.125rem;
+  }
+}
 
 .logo {
   margin-bottom: 3rem;
-  margin-left: 100px;
+  margin-left: 6.25rem;
+}
+@media (max-width: 1020px) {
+  .logo {
+    margin-left: 1.875rem;
+  }
 }/*# sourceMappingURL=main.css.map */
