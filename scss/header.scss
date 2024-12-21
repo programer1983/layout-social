@@ -18,8 +18,8 @@ $darkColor: #272B36;
             grid-template-columns: repeat((2, 1fr));
             row-gap: 20px;
         }
-        @media (max-width: 390px){
-           
+        @media (max-width: 400px){
+            margin-bottom: 1.875rem;
         }
     }
     &__search {

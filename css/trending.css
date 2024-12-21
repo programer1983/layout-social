@@ -20,6 +20,12 @@
     min-width: 80%;
   }
 }
+@media (max-width: 600px) {
+  .trending__top {
+    flex-direction: column;
+    row-gap: 1.25rem;
+  }
+}
 .trending__title {
   font-size: 20px;
   font-weight: 700;
@@ -38,6 +44,13 @@
   align-items: center;
   column-gap: 0.9375rem;
   margin-bottom: 1.5rem;
+}
+@media (max-width: 800px) {
+  .trending__list {
+    flex-wrap: wrap;
+    row-gap: 0.9375rem;
+    justify-content: center;
+  }
 }
 .trending__list-item {
   background-color: #FFFFFF;
@@ -63,6 +76,13 @@
 .trending__items {
   display: flex;
   column-gap: 24px;
+}
+@media (max-width: 800px) {
+  .trending__items {
+    flex-wrap: wrap;
+    row-gap: 0.9375rem;
+    justify-content: center;
+  }
 }
 .trending__item {
   position: relative;

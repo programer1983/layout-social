@@ -13,6 +13,11 @@
     row-gap: 20px;
   }
 }
+@media (max-width: 400px) {
+  .header__inner {
+    margin-bottom: 1.875rem;
+  }
+}
 .header__search {
   background-color: #FFFFFF;
   padding: 1rem 0.875rem 1rem 3.5rem;

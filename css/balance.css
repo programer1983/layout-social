@@ -13,6 +13,11 @@
     align-items: center;
   }
 }
+@media (max-width: 630px) {
+  .balance {
+    background-color: transparent;
+  }
+}
 .balance__title {
   font-family: "Poppins", "sans-serif";
   font-weight: 400;
@@ -29,6 +34,13 @@
   margin-bottom: 1.125rem;
   text-align: center;
 }
+@media (max-width: 630px) {
+  .balance__price {
+    background-color: rgba(255, 255, 255, 0.295);
+    padding: 0.9375rem;
+    border-radius: 0.625rem;
+  }
+}
 .balance__grafic {
   position: relative;
 }
@@ -44,13 +56,35 @@
   top: 1.2rem;
   left: 9rem;
 }
+@media (max-width: 400px) {
+  .balance__icon {
+    top: 1.25rem;
+    left: 6.25rem;
+  }
+}
+@media (max-width: 400px) {
+  .balance__vector {
+    width: 250px;
+  }
+}
 .balance__bg {
   margin-top: -6.5rem;
+}
+@media (max-width: 400px) {
+  .balance__bg {
+    width: 250px;
+    margin-top: -5.3125rem;
+  }
 }
 .balance__list {
   display: flex;
   align-items: center;
   column-gap: 1.5625rem;
+}
+@media (max-width: 400px) {
+  .balance__list {
+    column-gap: 0.9375rem;
+  }
 }
 .balance__item {
   color: #8E8C99;

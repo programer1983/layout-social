@@ -24,6 +24,10 @@ $grayDark: #8E8C99;
         @media (max-width: 1320px){
            min-width: 80%;
         }
+        @media (max-width: 600px){
+            flex-direction: column;
+            row-gap: 1.25rem;
+         }
     }
     &__title {
         font-size: 20px;
@@ -43,6 +47,11 @@ $grayDark: #8E8C99;
         align-items: center;
         column-gap: 0.9375rem;
         margin-bottom: 1.5rem;
+        @media (max-width: 800px){
+            flex-wrap: wrap;
+            row-gap: 0.9375rem;
+            justify-content: center;
+        }
     }
     &__list-item {
         background-color: $white;
@@ -68,6 +77,11 @@ $grayDark: #8E8C99;
     &__items {
         display: flex;
         column-gap: 24px;
+        @media (max-width: 800px){
+            flex-wrap: wrap;
+            row-gap: 0.9375rem;
+            justify-content: center;
+        }
     }
     &__item {
        position: relative;

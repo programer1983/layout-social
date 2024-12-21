@@ -16,6 +16,9 @@ $grayDark: #8E8C99;
         flex-direction: column;
         align-items: center;
     }
+    @media (max-width: 630px){
+        background-color: transparent;
+    }
     &__title {
         font-family: $poppinsFonts;
         font-weight: 400;
@@ -31,6 +34,11 @@ $grayDark: #8E8C99;
         color: $iconColor;
         margin-bottom: 1.125rem;
         text-align: center;
+        @media (max-width: 630px){
+            background-color: rgba(255, 255, 255, 0.295);
+            padding: 0.9375rem;
+            border-radius: 0.625rem;
+        }
     }
     &__grafic {
         position: relative;
@@ -39,21 +47,38 @@ $grayDark: #8E8C99;
             flex-direction: column;
             align-items: center;
         }
+        @media (max-width: 400px){
+           
+        }
     }
     &__icon {
         position: absolute;
         top: 1.2rem;
         left: 9rem;
+        @media (max-width: 400px){
+            top: 1.25rem;
+            left: 6.25rem;
+        }
     }
     &__vector {
+        @media (max-width: 400px){
+            width: 250px;
+        }
     }
     &__bg {
         margin-top: -6.5rem;
+        @media (max-width: 400px){
+            width: 250px;
+            margin-top: -5.3125rem;
+        }
     }
     &__list {
         display: flex;
         align-items: center;
         column-gap: 1.5625rem;
+        @media (max-width: 400px){
+            column-gap: 0.9375rem;
+        }
     }
     &__item {
         color: $grayDark;

@@ -20,6 +20,16 @@
     padding-left: 3.125rem;
   }
 }
+@media (max-width: 1020px) {
+  .social {
+    height: 2400px;
+  }
+}
+@media (max-width: 400px) {
+  .social {
+    padding-top: 20px;
+  }
+}
 
 .logo {
   margin-bottom: 3rem;
